@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+#http://localhost:8080/JSON/spider/view/fullResults/?apikey=m2a58n594fjhsaliofsmjtas77&scanId=0
+#http://localhost:8080/JSON/spider/view/scans/?apikey=m2a58n594fjhsaliofsmjtas77
 import time
 from zapv2 import ZAPv2
 import requests
