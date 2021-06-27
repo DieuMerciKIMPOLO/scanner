@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'scanproject',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -49,8 +50,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
+#CORS_ALLOW_METHODS =   ["*"]
+#CORS_ALLOWED_ORIGINS = "*"
+#CSRF_TRUSTED_ORIGINS = ["*"]
+CORS_ORIGIN_ALLOW_ALL= True
 ROOT_URLCONF = 'scanproject.urls'
 
 TEMPLATES = [
